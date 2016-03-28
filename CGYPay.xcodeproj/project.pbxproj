@@ -12,11 +12,8 @@
 		83639ACF1CA50E9400708E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83639ACD1CA50E9400708E8E /* Main.storyboard */; };
 		83639AD11CA50E9400708E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83639AD01CA50E9400708E8E /* Assets.xcassets */; };
 		83639AD41CA50E9400708E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83639AD21CA50E9400708E8E /* LaunchScreen.storyboard */; };
-		83639ADF1CA518DE00708E8E /* CGYPayChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83639ADE1CA518DE00708E8E /* CGYPayChannel.swift */; };
-		83639AEE1CA51CF000708E8E /* CGYPayAppdelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83639AED1CA51CF000708E8E /* CGYPayAppdelegateExtension.swift */; };
 		83639AF11CA51ECD00708E8E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83639AF01CA51ECD00708E8E /* CoreTelephony.framework */; };
 		83639AF41CA51F5A00708E8E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83639AF31CA51F5A00708E8E /* SystemConfiguration.framework */; };
-		83639AF61CA5203000708E8E /* CGYPayWxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83639AF51CA5203000708E8E /* CGYPayWxService.swift */; };
 		83639AF81CA522B500708E8E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83639AF71CA522B500708E8E /* libz.tbd */; };
 		83639AFA1CA522BF00708E8E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83639AF91CA522BF00708E8E /* libsqlite3.0.tbd */; };
 		83639AFC1CA5259B00708E8E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83639AFB1CA5259B00708E8E /* libc++.tbd */; };
@@ -25,11 +22,14 @@
 		83835F4E1CA5B40A0066C12A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F4D1CA5B40A0066C12A /* CoreGraphics.framework */; };
 		83835F501CA5B4900066C12A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F4F1CA5B4900066C12A /* CoreText.framework */; };
 		83835F521CA5B4EA0066C12A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F511CA5B4EA0066C12A /* CFNetwork.framework */; };
-		83835F541CA5C1D50066C12A /* CGYPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83835F531CA5C1D50066C12A /* CGYPay.swift */; };
-		83835F561CA6AF650066C12A /* CGYPayConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83835F551CA6AF650066C12A /* CGYPayConstant.swift */; };
-		83835F581CA6B1480066C12A /* CGYPayAliService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83835F571CA6B1480066C12A /* CGYPayAliService.swift */; };
-		83835F621CA6F3A60066C12A /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F5A1CA6F3A60066C12A /* AlipaySDK.framework */; };
-		83835F631CA6F3A60066C12A /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F5E1CA6F3A60066C12A /* libWeChatSDK.a */; };
+		83DA3E481CA95FE000BCF0FD /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA3E3C1CA95FE000BCF0FD /* AlipaySDK.framework */; };
+		83DA3E491CA95FE000BCF0FD /* CGYPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E3D1CA95FE000BCF0FD /* CGYPay.swift */; };
+		83DA3E4A1CA95FE000BCF0FD /* CGYPayAliService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E3E1CA95FE000BCF0FD /* CGYPayAliService.swift */; };
+		83DA3E4B1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E3F1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift */; };
+		83DA3E4C1CA95FE000BCF0FD /* CGYPayChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E401CA95FE000BCF0FD /* CGYPayChannel.swift */; };
+		83DA3E4D1CA95FE000BCF0FD /* CGYPayConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E411CA95FE000BCF0FD /* CGYPayConstant.swift */; };
+		83DA3E4E1CA95FE000BCF0FD /* CGYPayWxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E421CA95FE000BCF0FD /* CGYPayWxService.swift */; };
+		83DA3E4F1CA95FE000BCF0FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA3E441CA95FE000BCF0FD /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,12 +40,9 @@
 		83639AD01CA50E9400708E8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83639AD31CA50E9400708E8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83639AD51CA50E9400708E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83639ADE1CA518DE00708E8E /* CGYPayChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayChannel.swift; sourceTree = "<group>"; };
-		83639AED1CA51CF000708E8E /* CGYPayAppdelegateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAppdelegateExtension.swift; sourceTree = "<group>"; };
 		83639AEF1CA51DA300708E8E /* CGYPay-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGYPay-Bridging-Header.h"; sourceTree = "<group>"; };
 		83639AF01CA51ECD00708E8E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		83639AF31CA51F5A00708E8E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		83639AF51CA5203000708E8E /* CGYPayWxService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayWxService.swift; sourceTree = "<group>"; };
 		83639AF71CA522B500708E8E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		83639AF91CA522BF00708E8E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		83639AFB1CA5259B00708E8E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -54,14 +51,17 @@
 		83835F4D1CA5B40A0066C12A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		83835F4F1CA5B4900066C12A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		83835F511CA5B4EA0066C12A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		83835F531CA5C1D50066C12A /* CGYPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPay.swift; sourceTree = "<group>"; };
-		83835F551CA6AF650066C12A /* CGYPayConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayConstant.swift; sourceTree = "<group>"; };
-		83835F571CA6B1480066C12A /* CGYPayAliService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAliService.swift; sourceTree = "<group>"; };
-		83835F5A1CA6F3A60066C12A /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		83835F5E1CA6F3A60066C12A /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		83835F5F1CA6F3A60066C12A /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		83835F601CA6F3A60066C12A /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		83835F611CA6F3A60066C12A /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		83DA3E3C1CA95FE000BCF0FD /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		83DA3E3D1CA95FE000BCF0FD /* CGYPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPay.swift; sourceTree = "<group>"; };
+		83DA3E3E1CA95FE000BCF0FD /* CGYPayAliService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAliService.swift; sourceTree = "<group>"; };
+		83DA3E3F1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAppdelegateExtension.swift; sourceTree = "<group>"; };
+		83DA3E401CA95FE000BCF0FD /* CGYPayChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayChannel.swift; sourceTree = "<group>"; };
+		83DA3E411CA95FE000BCF0FD /* CGYPayConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayConstant.swift; sourceTree = "<group>"; };
+		83DA3E421CA95FE000BCF0FD /* CGYPayWxService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayWxService.swift; sourceTree = "<group>"; };
+		83DA3E441CA95FE000BCF0FD /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		83DA3E451CA95FE000BCF0FD /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		83DA3E461CA95FE000BCF0FD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		83DA3E471CA95FE000BCF0FD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +71,12 @@
 			files = (
 				83835F4A1CA5B3DB0066C12A /* CoreMotion.framework in Frameworks */,
 				83835F521CA5B4EA0066C12A /* CFNetwork.framework in Frameworks */,
-				83835F631CA6F3A60066C12A /* libWeChatSDK.a in Frameworks */,
+				83DA3E4F1CA95FE000BCF0FD /* libWeChatSDK.a in Frameworks */,
 				83835F4C1CA5B3ED0066C12A /* QuartzCore.framework in Frameworks */,
 				83835F501CA5B4900066C12A /* CoreText.framework in Frameworks */,
 				83835F4E1CA5B40A0066C12A /* CoreGraphics.framework in Frameworks */,
 				83639AFC1CA5259B00708E8E /* libc++.tbd in Frameworks */,
-				83835F621CA6F3A60066C12A /* AlipaySDK.framework in Frameworks */,
+				83DA3E481CA95FE000BCF0FD /* AlipaySDK.framework in Frameworks */,
 				83639AF81CA522B500708E8E /* libz.tbd in Frameworks */,
 				83639AFA1CA522BF00708E8E /* libsqlite3.0.tbd in Frameworks */,
 				83639AF41CA51F5A00708E8E /* SystemConfiguration.framework in Frameworks */,
@@ -90,7 +90,7 @@
 		83639ABD1CA50E9400708E8E = {
 			isa = PBXGroup;
 			children = (
-				83639ADB1CA512BE00708E8E /* Classes */,
+				83DA3E3A1CA95FE000BCF0FD /* CGYPayClasses */,
 				83639AC81CA50E9400708E8E /* CGYPay */,
 				83639AC71CA50E9400708E8E /* Products */,
 			);
@@ -114,22 +114,6 @@
 				83639AE51CA51C3400708E8E /* Supporting Files */,
 			);
 			path = CGYPay;
-			sourceTree = "<group>";
-		};
-		83639ADB1CA512BE00708E8E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				83835F591CA6F3A60066C12A /* AlipaySDk */,
-				83835F5D1CA6F3A60066C12A /* WxSDK */,
-				83835F531CA5C1D50066C12A /* CGYPay.swift */,
-				83639ADE1CA518DE00708E8E /* CGYPayChannel.swift */,
-				83639AF51CA5203000708E8E /* CGYPayWxService.swift */,
-				83835F571CA6B1480066C12A /* CGYPayAliService.swift */,
-				83835F551CA6AF650066C12A /* CGYPayConstant.swift */,
-				83639AED1CA51CF000708E8E /* CGYPayAppdelegateExtension.swift */,
-			);
-			name = Classes;
-			path = CGYPay/Classes;
 			sourceTree = "<group>";
 		};
 		83639AE51CA51C3400708E8E /* Supporting Files */ = {
@@ -160,21 +144,37 @@
 			name = FrameWork;
 			sourceTree = "<group>";
 		};
-		83835F591CA6F3A60066C12A /* AlipaySDk */ = {
+		83DA3E3A1CA95FE000BCF0FD /* CGYPayClasses */ = {
 			isa = PBXGroup;
 			children = (
-				83835F5A1CA6F3A60066C12A /* AlipaySDK.framework */,
+				83DA3E3B1CA95FE000BCF0FD /* AlipaySDk */,
+				83DA3E431CA95FE000BCF0FD /* WxSDK */,
+				83DA3E3D1CA95FE000BCF0FD /* CGYPay.swift */,
+				83DA3E3E1CA95FE000BCF0FD /* CGYPayAliService.swift */,
+				83DA3E3F1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift */,
+				83DA3E401CA95FE000BCF0FD /* CGYPayChannel.swift */,
+				83DA3E411CA95FE000BCF0FD /* CGYPayConstant.swift */,
+				83DA3E421CA95FE000BCF0FD /* CGYPayWxService.swift */,
+			);
+			name = CGYPayClasses;
+			path = CGYPay/CGYPayClasses;
+			sourceTree = "<group>";
+		};
+		83DA3E3B1CA95FE000BCF0FD /* AlipaySDk */ = {
+			isa = PBXGroup;
+			children = (
+				83DA3E3C1CA95FE000BCF0FD /* AlipaySDK.framework */,
 			);
 			path = AlipaySDk;
 			sourceTree = "<group>";
 		};
-		83835F5D1CA6F3A60066C12A /* WxSDK */ = {
+		83DA3E431CA95FE000BCF0FD /* WxSDK */ = {
 			isa = PBXGroup;
 			children = (
-				83835F5E1CA6F3A60066C12A /* libWeChatSDK.a */,
-				83835F5F1CA6F3A60066C12A /* WechatAuthSDK.h */,
-				83835F601CA6F3A60066C12A /* WXApi.h */,
-				83835F611CA6F3A60066C12A /* WXApiObject.h */,
+				83DA3E441CA95FE000BCF0FD /* libWeChatSDK.a */,
+				83DA3E451CA95FE000BCF0FD /* WechatAuthSDK.h */,
+				83DA3E461CA95FE000BCF0FD /* WXApi.h */,
+				83DA3E471CA95FE000BCF0FD /* WXApiObject.h */,
 			);
 			path = WxSDK;
 			sourceTree = "<group>";
@@ -251,14 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83639AEE1CA51CF000708E8E /* CGYPayAppdelegateExtension.swift in Sources */,
-				83639AF61CA5203000708E8E /* CGYPayWxService.swift in Sources */,
-				83835F581CA6B1480066C12A /* CGYPayAliService.swift in Sources */,
-				83835F541CA5C1D50066C12A /* CGYPay.swift in Sources */,
-				83835F561CA6AF650066C12A /* CGYPayConstant.swift in Sources */,
+				83DA3E4C1CA95FE000BCF0FD /* CGYPayChannel.swift in Sources */,
 				83639ACC1CA50E9400708E8E /* ViewController.swift in Sources */,
+				83DA3E4A1CA95FE000BCF0FD /* CGYPayAliService.swift in Sources */,
+				83DA3E4D1CA95FE000BCF0FD /* CGYPayConstant.swift in Sources */,
 				83639ACA1CA50E9400708E8E /* AppDelegate.swift in Sources */,
-				83639ADF1CA518DE00708E8E /* CGYPayChannel.swift in Sources */,
+				83DA3E4E1CA95FE000BCF0FD /* CGYPayWxService.swift in Sources */,
+				83DA3E491CA95FE000BCF0FD /* CGYPay.swift in Sources */,
+				83DA3E4B1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +375,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CGYPay/AlipaySDk",
 					"$(PROJECT_DIR)/CGYPay/Classes/AlipaySDk",
+					"$(PROJECT_DIR)/CGYPay/CGYPayClasses/AlipaySDk",
 				);
 				INFOPLIST_FILE = CGYPay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -385,6 +386,7 @@
 					"$(PROJECT_DIR)/CGYPay/WxSDK",
 					"$(PROJECT_DIR)/CGYPay/AlipaySDk",
 					"$(PROJECT_DIR)/CGYPay/Classes/WxSDK",
+					"$(PROJECT_DIR)/CGYPay/CGYPayClasses/WxSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ccggyy.CGYPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +402,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CGYPay/AlipaySDk",
 					"$(PROJECT_DIR)/CGYPay/Classes/AlipaySDk",
+					"$(PROJECT_DIR)/CGYPay/CGYPayClasses/AlipaySDk",
 				);
 				INFOPLIST_FILE = CGYPay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -410,6 +413,7 @@
 					"$(PROJECT_DIR)/CGYPay/WxSDK",
 					"$(PROJECT_DIR)/CGYPay/AlipaySDk",
 					"$(PROJECT_DIR)/CGYPay/Classes/WxSDK",
+					"$(PROJECT_DIR)/CGYPay/CGYPayClasses/WxSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ccggyy.CGYPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
