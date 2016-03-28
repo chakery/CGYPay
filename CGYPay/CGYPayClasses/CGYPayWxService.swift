@@ -5,6 +5,7 @@
 //  Created by Chakery on 16/3/25.
 //  Copyright © 2016年 Chakery. All rights reserved.
 //
+//  微信支付
 
 import Foundation
 
@@ -60,7 +61,7 @@ class CGYPayWxService: NSObject, WXApiDelegate {
         var payStatus: CGYPayStatusCode
         switch WXErrCode(payResp.errCode) {
         case WXSuccess:
-            payStatus = CGYPayStatusCode.PaySuccess(wxPayResult: payResp.returnKey, aliPayResult: nil)
+            payStatus = CGYPayStatusCode.PaySuccess(wxPayResult: payResp.returnKey, aliPayResult: nil, upPayResult: nil)
         case WXErrCodeUserCancel:
             payStatus = CGYPayStatusCode.PayErrCodeUserCancel
         case WXErrCodeSentFail:

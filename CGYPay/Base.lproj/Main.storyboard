@@ -46,6 +46,9 @@
                                     <constraint firstAttribute="width" constant="60" id="sPw-Tm-zdq"/>
                                 </constraints>
                                 <state key="normal" title="银联支付"/>
+                                <connections>
+                                    <action selector="upPayHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Elv-3R-Lqd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

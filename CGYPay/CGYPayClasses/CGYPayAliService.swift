@@ -5,6 +5,7 @@
 //  Created by Chakery on 16/3/26.
 //  Copyright © 2016年 Chakery. All rights reserved.
 //
+//  支付宝
 
 import Foundation
 
@@ -54,7 +55,7 @@ class CGYPayAliService: NSObject {
         var payStatus: CGYPayStatusCode
         switch resultDic["resultStatus"]!.intValue {
         case 9000:
-            payStatus = CGYPayStatusCode.PaySuccess(wxPayResult: nil, aliPayResult: resultDic["result"]?.stringValue)
+            payStatus = CGYPayStatusCode.PaySuccess(wxPayResult: nil, aliPayResult: resultDic["result"]?.stringValue, upPayResult: nil)
         case 8000:
             payStatus = CGYPayStatusCode.PayProcessing
         case 4000:

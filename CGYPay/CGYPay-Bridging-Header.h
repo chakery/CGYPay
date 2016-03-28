@@ -11,10 +11,12 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
+// 微信支付
 #import "WXApi.h"
 #import "WXApiObject.h"
-
+// 支付宝支付
 #import <AlipaySDK/AlipaySDK.h>
+// 银联支付
+#import "UPPaymentControl.h"
 
 #endif /* CGYPay_Bridging_Header_h */

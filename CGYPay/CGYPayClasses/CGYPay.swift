@@ -21,6 +21,8 @@ class CGYPay: NSObject {
             CGYPayWxService.sharedCGYPayWxService.sendWxPay(channel, callBack: callBack)
         case .aliPay:
             CGYPayAliService.sharedCGYPayAliService.sendAliPay(channel, callBack: callBack)
+        case .upPay:
+            CGYPayUPService.sharedCGYPayUPService.sendUPPay(channel, callBack: callBack)
         }
     }
 }

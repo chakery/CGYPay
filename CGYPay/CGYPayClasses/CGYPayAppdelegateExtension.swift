@@ -17,6 +17,8 @@ extension AppDelegate {
         CGYPayWxService.sharedCGYPayWxService.handleOpenURL(url)
         // 支付宝回调
         CGYPayAliService.sharedCGYPayAliService.handleOpenURL(url)
+        // 银联支付
+        CGYPayUPService.sharedCGYPayUPService.handleOpenURL(url)
         return true
     }
     
@@ -25,6 +27,8 @@ extension AppDelegate {
         CGYPayWxService.sharedCGYPayWxService.handleOpenURL(url)
         // 支付宝回调
         CGYPayAliService.sharedCGYPayAliService.handleOpenURL(url)
+        // 银联支付
+        CGYPayUPService.sharedCGYPayUPService.handleOpenURL(url)
         return true
     }
 }

@@ -14,10 +14,11 @@ public enum CGYPayStatusCode {
      *
      *  @param wxPayResult  微信支付结果
      *  @param aliPayResult 支付宝支付结果
+     *  @param upPayResult  银联支付结果
      *
      *  @return 返回支付结果
      */
-    case PaySuccess(wxPayResult: String?, aliPayResult: String?)
+    case PaySuccess(wxPayResult: String?, aliPayResult: String?, upPayResult: [String:AnyObject]?)
     /// 正在处理
     case PayProcessing
     /// 用户取消支付
