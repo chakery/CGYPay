@@ -159,11 +159,11 @@
 				83DA3E3B1CA95FE000BCF0FD /* AlipaySDk */,
 				83DA3E431CA95FE000BCF0FD /* WxSDK */,
 				83DA3E3D1CA95FE000BCF0FD /* CGYPay.swift */,
+				83DA3E401CA95FE000BCF0FD /* CGYPayChannel.swift */,
+				83DA3E411CA95FE000BCF0FD /* CGYPayConstant.swift */,
 				83DA3E3E1CA95FE000BCF0FD /* CGYPayAliService.swift */,
 				83DA3E421CA95FE000BCF0FD /* CGYPayWxService.swift */,
 				83DA3E551CA9615800BCF0FD /* CGYPayUPService.swift */,
-				83DA3E401CA95FE000BCF0FD /* CGYPayChannel.swift */,
-				83DA3E411CA95FE000BCF0FD /* CGYPayConstant.swift */,
 				83DA3E3F1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift */,
 			);
 			name = CGYPayClasses;

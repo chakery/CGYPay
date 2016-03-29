@@ -42,19 +42,3 @@ class CGYPayUPService: NSObject {
         }
     }
 }
-
-/*
- CFNetwork.framework
- ＳystemConfiguration.framework
- libz
- 
- 允许URL Scheme白名单:
- uppaysdk
- uppaywallet
- uppayx1
- uppayx2
- uppayx3
- 
- 
- 
- */
