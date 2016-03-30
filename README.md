@@ -98,20 +98,20 @@ return true
 调起微信支付.
 ```Swift
 let channel = CGYPayChannel.weixin(
-partnerId: "商家id",
-prepayid: "订单id",
-nonceStr: "随机字符串,防止重发",
-timeStamp: 时间戳,防止重发(例: 1459014554),
-package: "扩展字段(暂填写固定值Sign=WXpay)",
-sign: "签名")
+                                partnerId: "商家id",
+                                prepayid: "订单id",
+                                nonceStr: "随机字符串,防止重发",
+                                timeStamp: 时间戳,防止重发(例: 1459014554),
+                                package: "扩展字段(暂填写固定值Sign=WXpay)",
+                                sign: "签名")
 
 CGYPay.createPayment(channel) { (status) in
-switch status {
-case .PaySuccess(let wxPayResult, _, _):
-print("支付成功: \(wxPayResult)")
-default:
-print("支付失败")
-}
+    switch status {
+    case .PaySuccess(let wxPayResult, _, _):
+        print("支付成功: \(wxPayResult)")
+    default:
+        print("支付失败")
+    }
 }
 ```
 
@@ -123,12 +123,12 @@ let orderStr = "partner=\"2088101568358171\"&seller_id=\"xxx@alipay.com\"&out_tr
 let channel = CGYPayChannel.aliPay(orderString: orderStr, appScheme: appid)
 
 CGYPay.createPayment(channel) { (status) in
-switch status {
-case .PaySuccess(_, let aliPayResult, _):
-print("支付成功: \(aliPayResult)")
-default:
-print("支付失败")
-}
+    switch status {
+    case .PaySuccess(_, let aliPayResult, _):
+        print("支付成功: \(aliPayResult)")
+    default:
+        print("支付失败")
+    }
 }
 ```
 
@@ -138,17 +138,17 @@ print("支付失败")
 // appScheme:   参数对应URL types里面的URL scheme
 // mode:        接入模式, "00"生产模式, "01"开发测试模式
 let channel = CGYPayChannel.upPay(
-tn: "201603282300181104808", 
-appScheme: "com.ccggyy.cgypay", 
-mode: "01")
+                            tn: "201603282300181104808", 
+                            appScheme: "com.ccggyy.cgypay", 
+                            mode: "01")
 
 CGYPay.createPayment(channel) { status in
-switch status {
-case .PaySuccess(_, _, let upPayResult):
-print("银联支付成功: \(upPayResult)")
-default:
-print("银联支付失败")
-}
+    switch status {
+    case .PaySuccess(_, _, let upPayResult):
+        print("银联支付成功: \(upPayResult)")
+    default:
+        print("银联支付失败")
+    }
 }
 // 支付成功后, 返回一个字典对象 --- upPayResult
 // 格式 { "sign":"" , "data":"" }
