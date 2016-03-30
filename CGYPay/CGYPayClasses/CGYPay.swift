@@ -25,4 +25,12 @@ class CGYPay: NSObject {
             CGYPayUPService.sharedCGYPayUPService.sendUPPay(channel, callBack: callBack)
         }
     }
+    
+    
+    class func handlerOpenURL(url: NSURL) -> Bool {
+        CGYPayWxService.sharedCGYPayWxService.handleOpenURL(url)
+        CGYPayAliService.sharedCGYPayAliService.handleOpenURL(url)
+        CGYPayUPService.sharedCGYPayUPService.handleOpenURL(url)
+        return true
+    }
 }

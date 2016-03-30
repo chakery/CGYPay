@@ -25,7 +25,6 @@
 		83DA3E481CA95FE000BCF0FD /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA3E3C1CA95FE000BCF0FD /* AlipaySDK.framework */; };
 		83DA3E491CA95FE000BCF0FD /* CGYPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E3D1CA95FE000BCF0FD /* CGYPay.swift */; };
 		83DA3E4A1CA95FE000BCF0FD /* CGYPayAliService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E3E1CA95FE000BCF0FD /* CGYPayAliService.swift */; };
-		83DA3E4B1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E3F1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift */; };
 		83DA3E4C1CA95FE000BCF0FD /* CGYPayChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E401CA95FE000BCF0FD /* CGYPayChannel.swift */; };
 		83DA3E4D1CA95FE000BCF0FD /* CGYPayConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E411CA95FE000BCF0FD /* CGYPayConstant.swift */; };
 		83DA3E4E1CA95FE000BCF0FD /* CGYPayWxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA3E421CA95FE000BCF0FD /* CGYPayWxService.swift */; };
@@ -56,7 +55,6 @@
 		83DA3E3C1CA95FE000BCF0FD /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		83DA3E3D1CA95FE000BCF0FD /* CGYPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPay.swift; sourceTree = "<group>"; };
 		83DA3E3E1CA95FE000BCF0FD /* CGYPayAliService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAliService.swift; sourceTree = "<group>"; };
-		83DA3E3F1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAppdelegateExtension.swift; sourceTree = "<group>"; };
 		83DA3E401CA95FE000BCF0FD /* CGYPayChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayChannel.swift; sourceTree = "<group>"; };
 		83DA3E411CA95FE000BCF0FD /* CGYPayConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayConstant.swift; sourceTree = "<group>"; };
 		83DA3E421CA95FE000BCF0FD /* CGYPayWxService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayWxService.swift; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 				83DA3E3E1CA95FE000BCF0FD /* CGYPayAliService.swift */,
 				83DA3E421CA95FE000BCF0FD /* CGYPayWxService.swift */,
 				83DA3E551CA9615800BCF0FD /* CGYPayUPService.swift */,
-				83DA3E3F1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift */,
 			);
 			name = CGYPayClasses;
 			path = CGYPay/CGYPayClasses;
@@ -278,7 +275,6 @@
 				83639ACA1CA50E9400708E8E /* AppDelegate.swift in Sources */,
 				83DA3E4E1CA95FE000BCF0FD /* CGYPayWxService.swift in Sources */,
 				83DA3E491CA95FE000BCF0FD /* CGYPay.swift in Sources */,
-				83DA3E4B1CA95FE000BCF0FD /* CGYPayAppdelegateExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
