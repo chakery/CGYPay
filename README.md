@@ -11,8 +11,9 @@
 
 ####1.2 导入SDK
 SDK主要包含的文件
-| 微信          | 支付宝            | 银联支付          |
-|:---:          |:---:              |:---:              |
+
+|微信            |支付宝              |银联支付            |
+|:------:       |:------:           |:------:           |
 |libWeChatSDK.a |AlipaySDK.framework|libPaymentControl.a|
 |WechatAuthSDK.h|                   |UPPaymentControl.h |
 |WXApi.h        |                   |                   |
