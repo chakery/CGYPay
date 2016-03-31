@@ -35,6 +35,8 @@ public enum CGYPayStatusCode {
     case PayErrWxUnInstall
     /// 网络错误
     case PayErrNetWorkFail
+    /// 没有导入相应的SDK
+    case PayErrSDKNotFound
     /// 未知错误
     case PayErrUnKnown
 }

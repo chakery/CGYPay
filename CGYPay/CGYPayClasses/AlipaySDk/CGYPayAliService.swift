@@ -9,18 +9,19 @@
 
 import Foundation
 
-class CGYPayAliService: NSObject {
-    private static let sharedInstance: CGYPayAliService = CGYPayAliService()
+class CGYPayAliService: BaseCGYPay {
     var payCallBack: CGYPayCompletedBlock?
-    class var sharedCGYPayAliService: CGYPayAliService {
-        return sharedInstance
+    private static let _sharedInstance = CGYPayAliService()
+    override class var sharedInstance: CGYPayAliService {
+        print("支付宝 初始化")
+        return _sharedInstance
     }
     
     // 发送支付宝支付
-    func sendAliPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
+    override func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
         payCallBack = callBack
-        if case .aliPay(let orderString, let appScheme) = channel {
-            AlipaySDK.defaultService().payOrder(orderString, fromScheme: appScheme, callback: { [unowned self] resultDic in
+        if case .aliPay(let order) = channel {
+            AlipaySDK.defaultService().payOrder(order.toOrderString(), fromScheme: order.appScheme, callback: { [unowned self] resultDic in
                 if let dic = resultDic as? [String:AnyObject] {
                     let payStatus = self.aliPayResultHandler(dic)
                     self.payCallBack?(status: payStatus)
@@ -34,8 +35,8 @@ class CGYPayAliService: NSObject {
      
      - parameter url: url
      */
-    func handleOpenURL(url: NSURL) {
-        guard url.host == "safepay" else { return }
+    override func handleOpenURL(url: NSURL) {
+        guard url.host == "safepay" || url.host == "platformapi" else { return }
         AlipaySDK.defaultService().processOrderWithPaymentResult(url, standbyCallback: { [unowned self] resultDic in
             if let dic = resultDic as? [String:AnyObject] {
                 let payStatus = self.aliPayResultHandler(dic)

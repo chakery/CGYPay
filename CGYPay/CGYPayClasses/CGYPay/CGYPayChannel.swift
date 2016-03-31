@@ -20,7 +20,7 @@ public enum CGYPayChannel {
      *  @param package      数据和签名
      *  @param sign         签名
      */
-    case weixin(partnerId: String, prepayid: String, nonceStr: String, timeStamp: UInt32, package: String, sign: String)
+    case weixin(order: CGYPayWxOrder)
     /**
      *  支付宝
      *
@@ -28,7 +28,7 @@ public enum CGYPayChannel {
      
      *  @param appScheme    URL types 下的 URL Scheme
      */
-    case aliPay(orderString: String, appScheme: String)
+    case aliPay(order: CGYPayAliPayOrder)
     
     /**
      *  银联支付
@@ -37,5 +37,5 @@ public enum CGYPayChannel {
      *  @param appScheme    URL types 下的 URL Scheme
      *  @param mode         接入模式, "00"代表生产环境, "01"代表开发测试环境
      */
-    case upPay(tn: String, appScheme: String, mode: String)
+    case upPay(order: CGYPayUpOrder)
 }

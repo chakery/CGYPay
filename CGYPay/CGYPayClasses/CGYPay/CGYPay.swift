@@ -20,14 +20,20 @@ class CGYPay: NSObject {
         case .weixin:
             if let wxPay = wxPay {
                 wxPay.sendPay(channel, callBack: callBack)
+            } else {
+                callBack(status: .PayErrSDKNotFound)
             }
         case .aliPay:
             if let aliPay = aliPay {
                 aliPay.sendPay(channel, callBack: callBack)
+            } else {
+                callBack(status: .PayErrSDKNotFound)
             }
         case .upPay:
-            if let unPay = unPay {
-                unPay.sendPay(channel, callBack: callBack)
+            if let upPay = upPay {
+                upPay.sendPay(channel, callBack: callBack)
+            } else {
+                callBack(status: .PayErrSDKNotFound)
             }
         }
     }
@@ -40,14 +46,14 @@ class CGYPay: NSObject {
         if let aliPay = aliPay {
             aliPay.handleOpenURL(url)
         }
-        if let unPay = unPay {
-            unPay.handleOpenURL(url)
+        if let upPay = upPay {
+            upPay.handleOpenURL(url)
         }
         return true
     }
     
     // 银联支付
-    private static var unPay: BaseCGYPay? = {
+    private static var upPay: BaseCGYPay? = {
         let upPayType = NSObject.cgy_classFromString("CGYPayUPService") as? BaseCGYPay.Type
         return upPayType?.sharedInstance
     }()

@@ -19,9 +19,9 @@ class CGYPayUPService: BaseCGYPay {
     
     override func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
         payCallBack = callBack
-        if case .upPay(let tn, let appScheme, let mode) = channel {
+        if case .upPay(let order) = channel {
             if let rootViewControl = UIApplication.sharedApplication().keyWindow?.rootViewController {
-                UPPaymentControl.defaultControl().startPay(tn, fromScheme: appScheme, mode: mode, viewController: rootViewControl)
+                UPPaymentControl.defaultControl().startPay(order.tn, fromScheme: order.appScheme, mode: order.mode, viewController: rootViewControl)
             } else {
                 payCallBack?(status: CGYPayStatusCode.PayErrUnKnown)
             }
@@ -29,6 +29,7 @@ class CGYPayUPService: BaseCGYPay {
     }
     
     override func handleOpenURL(url: NSURL) {
+        guard "uppayresult" == url.host else { return }
         UPPaymentControl.defaultControl().handlePaymentResult(url) { [unowned self] stringCode, resultDic in
             switch stringCode {
             case "success":

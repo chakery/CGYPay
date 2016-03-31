@@ -11,7 +11,6 @@ import Foundation
 class BaseCGYPay: NSObject {
     private static let _sharedInstance = BaseCGYPay()
     class var sharedInstance: BaseCGYPay {
-        print("基类初始化")
         return _sharedInstance
     }
     

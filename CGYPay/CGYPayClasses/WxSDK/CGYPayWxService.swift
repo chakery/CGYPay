@@ -9,15 +9,16 @@
 
 import Foundation
 
-class CGYPayWxService: NSObject, WXApiDelegate {
-    private static let sharedInstance: CGYPayWxService = CGYPayWxService()
+class CGYPayWxService: BaseCGYPay, WXApiDelegate {
     var payCallBack: CGYPayCompletedBlock?
-    class var sharedCGYPayWxService: CGYPayWxService {
-        return sharedInstance
+    private static let _sharedInstance = CGYPayWxService()
+    override class var sharedInstance: CGYPayWxService {
+        print("微信 初始化")
+        return _sharedInstance
     }
     
     func onReq(req: BaseReq!) {
-        print(req)
+        
     }
     
     func onResp(resp: BaseResp!) {
@@ -29,19 +30,19 @@ class CGYPayWxService: NSObject, WXApiDelegate {
     }
     
     // 发送微信支付
-    func sendWxPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
-        if case .weixin(let partnerId, let prepayid, let nonceStr, let timeStamp, let package, let sign)  = channel {
+    override func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
+        if case .weixin(let order)  = channel {
             guard WXApi.isWXAppInstalled() else {
                 callBack(status: .PayErrWxUnInstall)
                 return
             }
             let req = PayReq()
-            req.partnerId = partnerId
-            req.prepayId = prepayid
-            req.nonceStr = nonceStr
-            req.timeStamp = timeStamp
-            req.package = package
-            req.sign = sign
+            req.partnerId = order.partnerId
+            req.prepayId = order.prepayid
+            req.nonceStr = order.nonceStr
+            req.timeStamp = order.timeStamp
+            req.package = order.package
+            req.sign = order.sign
             WXApi.sendReq(req)
             payCallBack = callBack
         }
@@ -52,7 +53,8 @@ class CGYPayWxService: NSObject, WXApiDelegate {
      
      - parameter url: url
      */
-    func handleOpenURL(url: NSURL) {
+    override func handleOpenURL(url: NSURL) {
+        guard "pay" == url.host else { return }
         WXApi.handleOpenURL(url, delegate: self)
     }
     
