@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.subspec 'AliPay' do |alipay|
     alipay.source_files = 'CGYPay/Classes/AlipaySDk'
     alipay.vendored_frameworks = 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework'
-    alipay.public_header_files = 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework/**/*.h'
+    alipay.public_header_files = 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework/Headers/**/*.h'
     alipay.frameworks = 'CoreMotion', 'CoreGraphics', 'CoreText', 'QuartzCore'
     alipay.dependency 'CGYPay/Core'
   end

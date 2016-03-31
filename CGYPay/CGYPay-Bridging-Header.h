@@ -15,7 +15,7 @@
 #import "WXApi.h"
 #import "WXApiObject.h"
 // 支付宝支付
-#import <AlipaySDK/AlipaySDK.h>
+#import "AlipaySDK/AlipaySDK.h"
 // 银联支付
 #import "UPPaymentControl.h"
 

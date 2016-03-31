@@ -22,8 +22,6 @@
 		83835F4E1CA5B40A0066C12A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F4D1CA5B40A0066C12A /* CoreGraphics.framework */; };
 		83835F501CA5B4900066C12A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F4F1CA5B4900066C12A /* CoreText.framework */; };
 		83835F521CA5B4EA0066C12A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F511CA5B4EA0066C12A /* CFNetwork.framework */; };
-		839685091CAD042F00A55FD1 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839684F41CAD042F00A55FD1 /* AlipaySDK.framework */; };
-		8396850A1CAD042F00A55FD1 /* CGYPayAliService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684F51CAD042F00A55FD1 /* CGYPayAliService.swift */; };
 		839685131CAD042F00A55FD1 /* CGYPayUPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839685001CAD042F00A55FD1 /* CGYPayUPService.swift */; };
 		839685141CAD042F00A55FD1 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 839685011CAD042F00A55FD1 /* libPaymentControl.a */; };
 		839685151CAD042F00A55FD1 /* CGYPayWxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839685041CAD042F00A55FD1 /* CGYPayWxService.swift */; };
@@ -36,6 +34,8 @@
 		839685251CAD149A00A55FD1 /* CGYPayConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851D1CAD149A00A55FD1 /* CGYPayConstant.swift */; };
 		839685261CAD149A00A55FD1 /* CGYPayUpOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851E1CAD149A00A55FD1 /* CGYPayUpOrder.swift */; };
 		839685271CAD149A00A55FD1 /* CGYPayWxOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851F1CAD149A00A55FD1 /* CGYPayWxOrder.swift */; };
+		8396852B1CAD695C00A55FD1 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839685291CAD695C00A55FD1 /* AlipaySDK.framework */; };
+		8396852C1CAD695D00A55FD1 /* CGYPayAliService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396852A1CAD695C00A55FD1 /* CGYPayAliService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +57,6 @@
 		83835F4D1CA5B40A0066C12A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		83835F4F1CA5B4900066C12A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		83835F511CA5B4EA0066C12A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		839684F41CAD042F00A55FD1 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		839684F51CAD042F00A55FD1 /* CGYPayAliService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAliService.swift; sourceTree = "<group>"; };
 		839685001CAD042F00A55FD1 /* CGYPayUPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayUPService.swift; sourceTree = "<group>"; };
 		839685011CAD042F00A55FD1 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		839685021CAD042F00A55FD1 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
@@ -75,6 +73,8 @@
 		8396851D1CAD149A00A55FD1 /* CGYPayConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayConstant.swift; sourceTree = "<group>"; };
 		8396851E1CAD149A00A55FD1 /* CGYPayUpOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayUpOrder.swift; sourceTree = "<group>"; };
 		8396851F1CAD149A00A55FD1 /* CGYPayWxOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayWxOrder.swift; sourceTree = "<group>"; };
+		839685291CAD695C00A55FD1 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		8396852A1CAD695C00A55FD1 /* CGYPayAliService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAliService.swift; sourceTree = "<group>"; };
 		83DA3E571CA9652800BCF0FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -90,10 +90,10 @@
 				839685161CAD042F00A55FD1 /* libWeChatSDK.a in Frameworks */,
 				83835F4E1CA5B40A0066C12A /* CoreGraphics.framework in Frameworks */,
 				83639AFC1CA5259B00708E8E /* libc++.tbd in Frameworks */,
-				839685091CAD042F00A55FD1 /* AlipaySDK.framework in Frameworks */,
 				83639AF81CA522B500708E8E /* libz.tbd in Frameworks */,
 				839685141CAD042F00A55FD1 /* libPaymentControl.a in Frameworks */,
 				83639AFA1CA522BF00708E8E /* libsqlite3.0.tbd in Frameworks */,
+				8396852B1CAD695C00A55FD1 /* AlipaySDK.framework in Frameworks */,
 				83639AF41CA51F5A00708E8E /* SystemConfiguration.framework in Frameworks */,
 				83639AF11CA51ECD00708E8E /* CoreTelephony.framework in Frameworks */,
 			);
@@ -164,21 +164,12 @@
 			isa = PBXGroup;
 			children = (
 				839685171CAD149A00A55FD1 /* CGYPayCore */,
-				839684F31CAD042F00A55FD1 /* AlipaySDk */,
+				839685281CAD695C00A55FD1 /* AlipaySDK */,
 				839684FF1CAD042F00A55FD1 /* UPPaySDK */,
 				839685031CAD042F00A55FD1 /* WxSDK */,
 			);
 			name = Classes;
 			path = CGYPay/Classes;
-			sourceTree = "<group>";
-		};
-		839684F31CAD042F00A55FD1 /* AlipaySDk */ = {
-			isa = PBXGroup;
-			children = (
-				839684F41CAD042F00A55FD1 /* AlipaySDK.framework */,
-				839684F51CAD042F00A55FD1 /* CGYPayAliService.swift */,
-			);
-			path = AlipaySDk;
 			sourceTree = "<group>";
 		};
 		839684FF1CAD042F00A55FD1 /* UPPaySDK */ = {
@@ -216,6 +207,15 @@
 				8396851F1CAD149A00A55FD1 /* CGYPayWxOrder.swift */,
 			);
 			path = CGYPayCore;
+			sourceTree = "<group>";
+		};
+		839685281CAD695C00A55FD1 /* AlipaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				839685291CAD695C00A55FD1 /* AlipaySDK.framework */,
+				8396852A1CAD695C00A55FD1 /* CGYPayAliService.swift */,
+			);
+			path = AlipaySDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +293,7 @@
 				839685231CAD149A00A55FD1 /* CGYPayAliPayOrder.swift in Sources */,
 				83639ACC1CA50E9400708E8E /* ViewController.swift in Sources */,
 				839685271CAD149A00A55FD1 /* CGYPayWxOrder.swift in Sources */,
+				8396852C1CAD695D00A55FD1 /* CGYPayAliService.swift in Sources */,
 				83639ACA1CA50E9400708E8E /* AppDelegate.swift in Sources */,
 				839685151CAD042F00A55FD1 /* CGYPayWxService.swift in Sources */,
 				839685131CAD042F00A55FD1 /* CGYPayUPService.swift in Sources */,
@@ -300,7 +301,6 @@
 				839685241CAD149A00A55FD1 /* CGYPayChannel.swift in Sources */,
 				839685211CAD149A00A55FD1 /* CGYNSObjectExtension.swift in Sources */,
 				839685261CAD149A00A55FD1 /* CGYPayUpOrder.swift in Sources */,
-				8396850A1CAD042F00A55FD1 /* CGYPayAliService.swift in Sources */,
 				839685201CAD149A00A55FD1 /* BaseCGYPay.swift in Sources */,
 				839685251CAD149A00A55FD1 /* CGYPayConstant.swift in Sources */,
 			);
@@ -420,6 +420,7 @@
 					"$(PROJECT_DIR)/CGYPay/AlipaySDk",
 					"$(PROJECT_DIR)/CGYPay/Classes/AlipaySDk",
 					"$(PROJECT_DIR)/CGYPay/CGYPayClasses/AlipaySDk",
+					"$(PROJECT_DIR)/CGYPay/Classes/AlipaySDK",
 				);
 				INFOPLIST_FILE = CGYPay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -450,6 +451,7 @@
 					"$(PROJECT_DIR)/CGYPay/AlipaySDk",
 					"$(PROJECT_DIR)/CGYPay/Classes/AlipaySDk",
 					"$(PROJECT_DIR)/CGYPay/CGYPayClasses/AlipaySDk",
+					"$(PROJECT_DIR)/CGYPay/Classes/AlipaySDK",
 				);
 				INFOPLIST_FILE = CGYPay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
