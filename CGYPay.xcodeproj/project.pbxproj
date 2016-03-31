@@ -24,18 +24,18 @@
 		83835F521CA5B4EA0066C12A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83835F511CA5B4EA0066C12A /* CFNetwork.framework */; };
 		839685091CAD042F00A55FD1 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839684F41CAD042F00A55FD1 /* AlipaySDK.framework */; };
 		8396850A1CAD042F00A55FD1 /* CGYPayAliService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684F51CAD042F00A55FD1 /* CGYPayAliService.swift */; };
-		8396850B1CAD042F00A55FD1 /* BaseCGYPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684F71CAD042F00A55FD1 /* BaseCGYPay.swift */; };
-		8396850C1CAD042F00A55FD1 /* CGYNSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684F81CAD042F00A55FD1 /* CGYNSObjectExtension.swift */; };
-		8396850D1CAD042F00A55FD1 /* CGYPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684F91CAD042F00A55FD1 /* CGYPay.swift */; };
-		8396850E1CAD042F00A55FD1 /* CGYPayAliPayOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684FA1CAD042F00A55FD1 /* CGYPayAliPayOrder.swift */; };
-		8396850F1CAD042F00A55FD1 /* CGYPayChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684FB1CAD042F00A55FD1 /* CGYPayChannel.swift */; };
-		839685101CAD042F00A55FD1 /* CGYPayConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684FC1CAD042F00A55FD1 /* CGYPayConstant.swift */; };
-		839685111CAD042F00A55FD1 /* CGYPayUpOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684FD1CAD042F00A55FD1 /* CGYPayUpOrder.swift */; };
-		839685121CAD042F00A55FD1 /* CGYPayWxOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839684FE1CAD042F00A55FD1 /* CGYPayWxOrder.swift */; };
 		839685131CAD042F00A55FD1 /* CGYPayUPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839685001CAD042F00A55FD1 /* CGYPayUPService.swift */; };
 		839685141CAD042F00A55FD1 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 839685011CAD042F00A55FD1 /* libPaymentControl.a */; };
 		839685151CAD042F00A55FD1 /* CGYPayWxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839685041CAD042F00A55FD1 /* CGYPayWxService.swift */; };
 		839685161CAD042F00A55FD1 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 839685051CAD042F00A55FD1 /* libWeChatSDK.a */; };
+		839685201CAD149A00A55FD1 /* BaseCGYPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839685181CAD149A00A55FD1 /* BaseCGYPay.swift */; };
+		839685211CAD149A00A55FD1 /* CGYNSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839685191CAD149A00A55FD1 /* CGYNSObjectExtension.swift */; };
+		839685221CAD149A00A55FD1 /* CGYPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851A1CAD149A00A55FD1 /* CGYPay.swift */; };
+		839685231CAD149A00A55FD1 /* CGYPayAliPayOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851B1CAD149A00A55FD1 /* CGYPayAliPayOrder.swift */; };
+		839685241CAD149A00A55FD1 /* CGYPayChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851C1CAD149A00A55FD1 /* CGYPayChannel.swift */; };
+		839685251CAD149A00A55FD1 /* CGYPayConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851D1CAD149A00A55FD1 /* CGYPayConstant.swift */; };
+		839685261CAD149A00A55FD1 /* CGYPayUpOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851E1CAD149A00A55FD1 /* CGYPayUpOrder.swift */; };
+		839685271CAD149A00A55FD1 /* CGYPayWxOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396851F1CAD149A00A55FD1 /* CGYPayWxOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,14 +59,6 @@
 		83835F511CA5B4EA0066C12A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		839684F41CAD042F00A55FD1 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		839684F51CAD042F00A55FD1 /* CGYPayAliService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAliService.swift; sourceTree = "<group>"; };
-		839684F71CAD042F00A55FD1 /* BaseCGYPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCGYPay.swift; sourceTree = "<group>"; };
-		839684F81CAD042F00A55FD1 /* CGYNSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYNSObjectExtension.swift; sourceTree = "<group>"; };
-		839684F91CAD042F00A55FD1 /* CGYPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPay.swift; sourceTree = "<group>"; };
-		839684FA1CAD042F00A55FD1 /* CGYPayAliPayOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAliPayOrder.swift; sourceTree = "<group>"; };
-		839684FB1CAD042F00A55FD1 /* CGYPayChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayChannel.swift; sourceTree = "<group>"; };
-		839684FC1CAD042F00A55FD1 /* CGYPayConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayConstant.swift; sourceTree = "<group>"; };
-		839684FD1CAD042F00A55FD1 /* CGYPayUpOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayUpOrder.swift; sourceTree = "<group>"; };
-		839684FE1CAD042F00A55FD1 /* CGYPayWxOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayWxOrder.swift; sourceTree = "<group>"; };
 		839685001CAD042F00A55FD1 /* CGYPayUPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayUPService.swift; sourceTree = "<group>"; };
 		839685011CAD042F00A55FD1 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		839685021CAD042F00A55FD1 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
@@ -75,6 +67,14 @@
 		839685061CAD042F00A55FD1 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		839685071CAD042F00A55FD1 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		839685081CAD042F00A55FD1 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		839685181CAD149A00A55FD1 /* BaseCGYPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCGYPay.swift; sourceTree = "<group>"; };
+		839685191CAD149A00A55FD1 /* CGYNSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYNSObjectExtension.swift; sourceTree = "<group>"; };
+		8396851A1CAD149A00A55FD1 /* CGYPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPay.swift; sourceTree = "<group>"; };
+		8396851B1CAD149A00A55FD1 /* CGYPayAliPayOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayAliPayOrder.swift; sourceTree = "<group>"; };
+		8396851C1CAD149A00A55FD1 /* CGYPayChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayChannel.swift; sourceTree = "<group>"; };
+		8396851D1CAD149A00A55FD1 /* CGYPayConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayConstant.swift; sourceTree = "<group>"; };
+		8396851E1CAD149A00A55FD1 /* CGYPayUpOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayUpOrder.swift; sourceTree = "<group>"; };
+		8396851F1CAD149A00A55FD1 /* CGYPayWxOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGYPayWxOrder.swift; sourceTree = "<group>"; };
 		83DA3E571CA9652800BCF0FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -163,8 +163,8 @@
 		839684F21CAD042F00A55FD1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				839685171CAD149A00A55FD1 /* CGYPayCore */,
 				839684F31CAD042F00A55FD1 /* AlipaySDk */,
-				839684F61CAD042F00A55FD1 /* CGYPay */,
 				839684FF1CAD042F00A55FD1 /* UPPaySDK */,
 				839685031CAD042F00A55FD1 /* WxSDK */,
 			);
@@ -179,21 +179,6 @@
 				839684F51CAD042F00A55FD1 /* CGYPayAliService.swift */,
 			);
 			path = AlipaySDk;
-			sourceTree = "<group>";
-		};
-		839684F61CAD042F00A55FD1 /* CGYPay */ = {
-			isa = PBXGroup;
-			children = (
-				839684F71CAD042F00A55FD1 /* BaseCGYPay.swift */,
-				839684F81CAD042F00A55FD1 /* CGYNSObjectExtension.swift */,
-				839684F91CAD042F00A55FD1 /* CGYPay.swift */,
-				839684FA1CAD042F00A55FD1 /* CGYPayAliPayOrder.swift */,
-				839684FB1CAD042F00A55FD1 /* CGYPayChannel.swift */,
-				839684FC1CAD042F00A55FD1 /* CGYPayConstant.swift */,
-				839684FD1CAD042F00A55FD1 /* CGYPayUpOrder.swift */,
-				839684FE1CAD042F00A55FD1 /* CGYPayWxOrder.swift */,
-			);
-			path = CGYPay;
 			sourceTree = "<group>";
 		};
 		839684FF1CAD042F00A55FD1 /* UPPaySDK */ = {
@@ -216,6 +201,21 @@
 				839685081CAD042F00A55FD1 /* WXApiObject.h */,
 			);
 			path = WxSDK;
+			sourceTree = "<group>";
+		};
+		839685171CAD149A00A55FD1 /* CGYPayCore */ = {
+			isa = PBXGroup;
+			children = (
+				839685181CAD149A00A55FD1 /* BaseCGYPay.swift */,
+				839685191CAD149A00A55FD1 /* CGYNSObjectExtension.swift */,
+				8396851A1CAD149A00A55FD1 /* CGYPay.swift */,
+				8396851B1CAD149A00A55FD1 /* CGYPayAliPayOrder.swift */,
+				8396851C1CAD149A00A55FD1 /* CGYPayChannel.swift */,
+				8396851D1CAD149A00A55FD1 /* CGYPayConstant.swift */,
+				8396851E1CAD149A00A55FD1 /* CGYPayUpOrder.swift */,
+				8396851F1CAD149A00A55FD1 /* CGYPayWxOrder.swift */,
+			);
+			path = CGYPayCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,19 +290,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839685231CAD149A00A55FD1 /* CGYPayAliPayOrder.swift in Sources */,
 				83639ACC1CA50E9400708E8E /* ViewController.swift in Sources */,
+				839685271CAD149A00A55FD1 /* CGYPayWxOrder.swift in Sources */,
 				83639ACA1CA50E9400708E8E /* AppDelegate.swift in Sources */,
-				8396850D1CAD042F00A55FD1 /* CGYPay.swift in Sources */,
 				839685151CAD042F00A55FD1 /* CGYPayWxService.swift in Sources */,
 				839685131CAD042F00A55FD1 /* CGYPayUPService.swift in Sources */,
-				839685121CAD042F00A55FD1 /* CGYPayWxOrder.swift in Sources */,
+				839685221CAD149A00A55FD1 /* CGYPay.swift in Sources */,
+				839685241CAD149A00A55FD1 /* CGYPayChannel.swift in Sources */,
+				839685211CAD149A00A55FD1 /* CGYNSObjectExtension.swift in Sources */,
+				839685261CAD149A00A55FD1 /* CGYPayUpOrder.swift in Sources */,
 				8396850A1CAD042F00A55FD1 /* CGYPayAliService.swift in Sources */,
-				839685111CAD042F00A55FD1 /* CGYPayUpOrder.swift in Sources */,
-				8396850F1CAD042F00A55FD1 /* CGYPayChannel.swift in Sources */,
-				8396850B1CAD042F00A55FD1 /* BaseCGYPay.swift in Sources */,
-				8396850E1CAD042F00A55FD1 /* CGYPayAliPayOrder.swift in Sources */,
-				8396850C1CAD042F00A55FD1 /* CGYNSObjectExtension.swift in Sources */,
-				839685101CAD042F00A55FD1 /* CGYPayConstant.swift in Sources */,
+				839685201CAD149A00A55FD1 /* BaseCGYPay.swift in Sources */,
+				839685251CAD149A00A55FD1 /* CGYPayConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

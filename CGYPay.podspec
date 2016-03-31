@@ -2,13 +2,9 @@ Pod::Spec.new do |s|
 
   s.name         = "CGYPay"
   s.version      = "1.0.0"
-  s.summary      = "CGYPay SDK"
-  s.description  = <<-DESC
-  					       让支付变得更简单
-                   DESC
-
+  s.summary      = "让支付变得更简单"
+  s.license      = "MIT"
   s.homepage     = "https://github.com/Chakery/CGYPay"
-  s.license      = 'MIT'
   s.author       = { "chakery" => "striveordeath@gmail.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Chakery/CGYPay.git", :tag => s.version }
@@ -17,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |core|
   	core.source_files = 'Classes/CGYPay/*.swift'
-  	core.ios.library = 'libc++', 'libz'
+  	core.ios.library = 'c++', 'z'
   	core.frameworks = 'CoreTelephony', 'SystemConfiguration', 'CFNetwork'
   	core.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
   end
@@ -33,7 +29,7 @@ Pod::Spec.new do |s|
     wx.vendored_libraries = 'Classes/WxSDK/*.a'
     wx.public_header_files = 'Classes/WxSDK/*.h'
     wx.source_files = 'Classes/WxSDK/*.swift'
-    wx.ios.library = 'libsqlite3.0'
+    wx.ios.library = 'sqlite3.0'
     wx.dependency 'CGYPay/Core'
   end
 
