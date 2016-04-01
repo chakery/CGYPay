@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.author       = { "chakery" => "striveordeath@gmail.com" }
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/Chakery/CGYPay.git", :tag => s.version }
-  s.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>'
   s.requires_arc = true
   s.default_subspec = 'Core'
 
@@ -20,7 +19,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AliPay' do |alipay|
-    alipay.source_files = 'CGYPay/Classes/AlipaySDk'
+    alipay.source_files = 'CGYPay/Classes/AlipaySDk', 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework/Headers/*'
     alipay.vendored_frameworks = 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework'
     alipay.public_header_files = 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework/Headers/**/*.h'
     alipay.frameworks = 'CoreMotion', 'CoreGraphics', 'CoreText', 'QuartzCore'
