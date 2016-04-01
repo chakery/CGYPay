@@ -10,13 +10,13 @@ import Foundation
 
 public class BaseCGYPay: NSObject {
     private static let _sharedInstance = BaseCGYPay()
-    class var sharedInstance: BaseCGYPay {
+    public class var sharedInstance: BaseCGYPay {
         return _sharedInstance
     }
     
-    func handleOpenURL(url: NSURL) { }
+    public func handleOpenURL(url: NSURL) { }
     
-    func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) { }
+    public func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) { }
     
-    func registerWxAPP(appid: String) { }
+    public func registerWxAPP(appid: String) { }
 }

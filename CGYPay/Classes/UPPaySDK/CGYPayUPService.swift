@@ -9,7 +9,7 @@
 
 import Foundation
 
-public class CGYPayUPService: BaseCGYPay {
+class CGYPayUPService: BaseCGYPay {
     private var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayUPService()
     override class var sharedInstance: CGYPayUPService {

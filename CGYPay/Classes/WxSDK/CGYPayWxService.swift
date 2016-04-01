@@ -9,18 +9,18 @@
 
 import Foundation
 
-public class CGYPayWxService: BaseCGYPay, WXApiDelegate {
+class CGYPayWxService: BaseCGYPay, WXApiDelegate {
     var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayWxService()
     override class var sharedInstance: CGYPayWxService {
         return _sharedInstance
     }
     
-    public func onReq(req: BaseReq!) {
+    func onReq(req: BaseReq!) {
         
     }
     
-    public func onResp(resp: BaseResp!) {
+    func onResp(resp: BaseResp!) {
         // 微信支付
         if resp is PayResp {
             payResponseParse(resp as! PayResp)
