@@ -21,19 +21,19 @@ public class CGYPay: NSObject {
             if let wxPay = wxPay {
                 wxPay.sendPay(channel, callBack: callBack)
             } else {
-                callBack(status: .PayErrSDKNotFound)
+                callBack(.PayErrSDKNotFound)
             }
         case .aliPay:
             if let aliPay = aliPay {
                 aliPay.sendPay(channel, callBack: callBack)
             } else {
-                callBack(status: .PayErrSDKNotFound)
+                callBack(.PayErrSDKNotFound)
             }
         case .upPay:
             if let upPay = upPay {
                 upPay.sendPay(channel, callBack: callBack)
             } else {
-                callBack(status: .PayErrSDKNotFound)
+                callBack(.PayErrSDKNotFound)
             }
         }
     }

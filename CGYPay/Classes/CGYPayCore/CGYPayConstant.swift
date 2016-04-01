@@ -57,5 +57,5 @@ public enum CGYPayStatusCode {
 }
 
 /// 支付回调
-public typealias CGYPayCompletedBlock = (status: CGYPayStatusCode) -> Void
+public typealias CGYPayCompletedBlock = CGYPayStatusCode -> Void
 

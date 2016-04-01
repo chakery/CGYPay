@@ -9,7 +9,7 @@
 
 import Foundation
 
-class CGYPayUPService: BaseCGYPay {
+public class CGYPayUPService: BaseCGYPay {
     private var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayUPService()
     override class var sharedInstance: CGYPayUPService {
@@ -22,7 +22,7 @@ class CGYPayUPService: BaseCGYPay {
             if let rootViewControl = UIApplication.sharedApplication().keyWindow?.rootViewController {
                 UPPaymentControl.defaultControl().startPay(order.tn, fromScheme: order.appScheme, mode: order.mode, viewController: rootViewControl)
             } else {
-                payCallBack?(status: CGYPayStatusCode.PayErrUnKnown)
+                payCallBack?(CGYPayStatusCode.PayErrUnKnown)
             }
         }
     }
@@ -32,13 +32,13 @@ class CGYPayUPService: BaseCGYPay {
         UPPaymentControl.defaultControl().handlePaymentResult(url) { [unowned self] stringCode, resultDic in
             switch stringCode {
             case "success":
-                self.payCallBack?(status: CGYPayStatusCode.PaySuccess(wxPayResult: nil, aliPayResult: nil, upPayResult: resultDic as! [String:AnyObject]?))
+                self.payCallBack?(CGYPayStatusCode.PaySuccess(wxPayResult: nil, aliPayResult: nil, upPayResult: resultDic as! [String:AnyObject]?))
             case "cancel":
-                self.payCallBack?(status: CGYPayStatusCode.PayErrCodeUserCancel)
+                self.payCallBack?(CGYPayStatusCode.PayErrCodeUserCancel)
             case "fail":
-                self.payCallBack?(status: CGYPayStatusCode.PayErrPayFail)
+                self.payCallBack?(CGYPayStatusCode.PayErrPayFail)
             default:
-                self.payCallBack?(status: CGYPayStatusCode.PayErrUnKnown)
+                self.payCallBack?(CGYPayStatusCode.PayErrUnKnown)
             }
         }
     }

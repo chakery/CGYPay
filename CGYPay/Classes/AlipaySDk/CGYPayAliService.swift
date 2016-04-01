@@ -9,7 +9,7 @@
 
 import Foundation
 
-class CGYPayAliService: BaseCGYPay {
+public class CGYPayAliService: BaseCGYPay {
     var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayAliService()
     override class var sharedInstance: CGYPayAliService {
@@ -23,7 +23,7 @@ class CGYPayAliService: BaseCGYPay {
             AlipaySDK.defaultService().payOrder(order.toOrderString(), fromScheme: order.appScheme, callback: { [unowned self] resultDic in
                 if let dic = resultDic as? [String:AnyObject] {
                     let payStatus = self.aliPayResultHandler(dic)
-                    self.payCallBack?(status: payStatus)
+                    self.payCallBack?(payStatus)
                 }
             })
         }
@@ -39,7 +39,7 @@ class CGYPayAliService: BaseCGYPay {
         AlipaySDK.defaultService().processOrderWithPaymentResult(url, standbyCallback: { [unowned self] resultDic in
             if let dic = resultDic as? [String:AnyObject] {
                 let payStatus = self.aliPayResultHandler(dic)
-                self.payCallBack?(status: payStatus)
+                self.payCallBack?(payStatus)
             }
         })
     }

@@ -9,18 +9,18 @@
 
 import Foundation
 
-class CGYPayWxService: BaseCGYPay, WXApiDelegate {
+public class CGYPayWxService: BaseCGYPay, WXApiDelegate {
     var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayWxService()
     override class var sharedInstance: CGYPayWxService {
         return _sharedInstance
     }
     
-    func onReq(req: BaseReq!) {
+    public func onReq(req: BaseReq!) {
         
     }
     
-    func onResp(resp: BaseResp!) {
+    public func onResp(resp: BaseResp!) {
         // 微信支付
         if resp is PayResp {
             payResponseParse(resp as! PayResp)
@@ -32,7 +32,7 @@ class CGYPayWxService: BaseCGYPay, WXApiDelegate {
     override func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
         if case .weixin(let order)  = channel {
             guard WXApi.isWXAppInstalled() else {
-                callBack(status: .PayErrWxUnInstall)
+                callBack(.PayErrWxUnInstall)
                 return
             }
             let req = PayReq()
@@ -83,6 +83,6 @@ class CGYPayWxService: BaseCGYPay, WXApiDelegate {
         default:
             payStatus = CGYPayStatusCode.PayErrUnKnown
         }
-        payCallBack?(status: payStatus)
+        payCallBack?(payStatus)
     }
 }

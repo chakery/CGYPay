@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BaseCGYPay: NSObject {
+public class BaseCGYPay: NSObject {
     private static let _sharedInstance = BaseCGYPay()
     class var sharedInstance: BaseCGYPay {
         return _sharedInstance
