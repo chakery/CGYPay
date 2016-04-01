@@ -15,7 +15,7 @@ public class CGYPay: NSObject {
      - parameter channel:  支付渠道
      - parameter callBack: 支付回调
      */
-    class func createPayment(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
+    public class func createPayment(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
         switch channel {
         case .weixin:
             if let wxPay = wxPay {
@@ -45,7 +45,7 @@ public class CGYPay: NSObject {
      
      - returns: 
      */
-    class func handlerOpenURL(url: NSURL) -> Bool {
+    public class func handlerOpenURL(url: NSURL) -> Bool {
         if let wxPay = wxPay {
             wxPay.handleOpenURL(url)
         }
@@ -63,7 +63,7 @@ public class CGYPay: NSObject {
      
      - parameter appid: appid
      */
-    class func registerWxAPP(appid: String) {
+    public class func registerWxAPP(appid: String) {
         if let wxPay = wxPay {
             wxPay.registerWxAPP(appid)
         }
