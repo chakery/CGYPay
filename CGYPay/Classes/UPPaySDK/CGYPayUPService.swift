@@ -13,7 +13,6 @@ class CGYPayUPService: BaseCGYPay {
     private var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayUPService()
     override class var sharedInstance: CGYPayUPService {
-        print("银联初始化")
         return _sharedInstance
     }
     

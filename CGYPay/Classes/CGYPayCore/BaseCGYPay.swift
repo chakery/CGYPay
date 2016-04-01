@@ -14,7 +14,7 @@ class BaseCGYPay: NSObject {
         return _sharedInstance
     }
     
-    func handleOpenURL(url: NSURL) { print("Base handler") }
+    func handleOpenURL(url: NSURL) { }
     
-    func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) { print("Base sendPay") }
+    func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) { }
 }

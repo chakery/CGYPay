@@ -9,6 +9,13 @@
 import Foundation
 
 extension NSObject {
+    /**
+     swift中把字符串转换成Class对象
+     
+     - parameter className: 需要转换的字符串
+     
+     - returns: 如果转换成功，返回AnyClass，否则返回nil
+     */
     class func cgy_classFromString(className: String) -> AnyClass? {
         if  let appName: String? = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleName") as! String? {
             let classStringName = "_TtC\(appName!.characters.count)\(appName!)\(className.characters.count)\(className)"

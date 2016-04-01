@@ -7,7 +7,13 @@
 //
 
 import Foundation
-
+/**
+ 支付通道
+ 
+ - weixin: 微信支付
+ - aliPay: 支付宝支付
+ - upPay:  银联支付
+ */
 public enum CGYPayChannel {
     /**
      *  微信支付

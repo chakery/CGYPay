@@ -13,7 +13,6 @@ class CGYPayWxService: BaseCGYPay, WXApiDelegate {
     var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayWxService()
     override class var sharedInstance: CGYPayWxService {
-        print("微信 初始化")
         return _sharedInstance
     }
     

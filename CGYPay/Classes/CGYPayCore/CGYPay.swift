@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CGYPay: NSObject {
+public class CGYPay: NSObject {
     /**
      调起支付
      
@@ -38,7 +38,13 @@ class CGYPay: NSObject {
         }
     }
     
-    
+    /**
+     从APP返回时执行的回调
+     
+     - parameter url: url
+     
+     - returns: 
+     */
     class func handlerOpenURL(url: NSURL) -> Bool {
         if let wxPay = wxPay {
             wxPay.handleOpenURL(url)

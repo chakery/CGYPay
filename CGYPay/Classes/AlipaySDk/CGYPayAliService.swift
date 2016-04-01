@@ -13,7 +13,6 @@ class CGYPayAliService: BaseCGYPay {
     var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayAliService()
     override class var sharedInstance: CGYPayAliService {
-        print("支付宝 初始化")
         return _sharedInstance
     }
     

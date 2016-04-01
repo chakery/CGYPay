@@ -78,7 +78,7 @@ extension CGYPayAliPayOrder {
      
      - returns: 调起支付的订单字符串
      */
-    func toOrderString() -> String {
+    public func toOrderString() -> String {
         var orderstring = "partner=\"\(partner)\"&seller_id=\"\(seller_id)\"&out_trade_no=\"\(out_trade_no)\"&subject=\"\(subject)\"&body=\"\(body)\"&total_fee=\"\(total_fee)\"&notify_url=\"\(notify_url)\"&service=\"\(service)\"&payment_type=\"\(payment_type)\"&_input_charset=\"\(_input_charset)\"&sign=\"\(sign)\"&sign_type=\"\(sign_type)\""
         
         if let it_b_pay = it_b_pay {
