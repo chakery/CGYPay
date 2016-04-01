@@ -57,6 +57,15 @@ class CGYPayWxService: BaseCGYPay, WXApiDelegate {
         WXApi.handleOpenURL(url, delegate: self)
     }
     
+    /**
+     注册微信
+     
+     - parameter appid: appid
+     */
+    override func registerWxAPP(appid: String) {
+        WXApi.registerApp(appid)
+    }
+    
     // 处理支付结果
     private func payResponseParse(payResp: PayResp) {
         var payStatus: CGYPayStatusCode

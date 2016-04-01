@@ -17,4 +17,6 @@ class BaseCGYPay: NSObject {
     func handleOpenURL(url: NSURL) { }
     
     func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) { }
+    
+    func registerWxAPP(appid: String) { }
 }

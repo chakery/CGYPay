@@ -58,6 +58,17 @@ public class CGYPay: NSObject {
         return true
     }
     
+    /**
+     注册微信
+     
+     - parameter appid: appid
+     */
+    class func registerWxAPP(appid: String) {
+        if let wxPay = wxPay {
+            wxPay.registerWxAPP(appid)
+        }
+    }
+    
     // 银联支付
     private static var upPay: BaseCGYPay? = {
         let upPayType = NSObject.cgy_classFromString("CGYPayUPService") as? BaseCGYPay.Type
