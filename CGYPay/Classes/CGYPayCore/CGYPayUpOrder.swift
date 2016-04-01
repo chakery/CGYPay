@@ -14,13 +14,13 @@ import Foundation
  */
 public struct CGYPayUpOrder {
      /// 订单id
-    var tn: String
+    public var tn: String
      /// URL types 下的 URL Scheme
-    var appScheme: String
+    public var appScheme: String
      /// 接入模式（00生产环境，01开发测试环境）
-    var mode: String
+    public var mode: String
     
-    init(tn: String, appScheme: String, mode: String) {
+    public init(tn: String, appScheme: String, mode: String) {
         self.tn = tn
         self.appScheme = appScheme
         self.mode = mode

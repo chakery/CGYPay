@@ -14,19 +14,19 @@ import Foundation
  */
 public struct CGYPayWxOrder {
      /// 商家id
-    var partnerId: String
+    public var partnerId: String
      /// 订单id
-    var prepayid: String
+    public var prepayid: String
      /// 随机字符串
-    var nonceStr: String
+    public var nonceStr: String
      /// 时间戳
-    var timeStamp: UInt32
+    public var timeStamp: UInt32
      /// 扩展字段
-    var package: String
+    public var package: String
      /// 签名
-    var sign: String
+    public var sign: String
     
-    init(partnerId: String, prepayid: String, nonceStr: String, timeStamp: UInt32, package: String, sign: String) {
+    public init(partnerId: String, prepayid: String, nonceStr: String, timeStamp: UInt32, package: String, sign: String) {
         self.partnerId = partnerId
         self.prepayid = prepayid
         self.nonceStr = nonceStr

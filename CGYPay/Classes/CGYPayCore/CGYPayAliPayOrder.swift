@@ -14,48 +14,48 @@ import Foundation
  */
 public struct CGYPayAliPayOrder {
      /// 商家id（以2088开头的16位纯数字组成）
-    var partner: String
+    public var partner: String
      /// 支付宝账号
-    var seller_id: String
+    public var seller_id: String
      /// 订单号
-    var out_trade_no: String
+    public var out_trade_no: String
      /// 商品名称（该参数最长为128个汉字）
-    var subject: String
+    public var subject: String
      /// 商品详情
-    var body: String
+    public var body: String
      /// 总金额（精确到小数点后两位）
-    var total_fee: String
+    public var total_fee: String
      /// 服务器异步通知页面路径（支付宝服务器主动通知商户网站里指定的页面http路径）
-    var notify_url: String
+    public var notify_url: String
      /// 接口名称（固定值：mobile.securitypay.pay）
-    var service: String
+    public var service: String
      /// 支付类型（默认值为：1（商品购买））
-    var payment_type: String
+    public var payment_type: String
      /// 参数编码字符集（固定值：utf-8）
-    var _input_charset: String
+    public var _input_charset: String
      /// 签名
-    var sign: String
+    public var sign: String
      /// 签名方式（目前仅支持RSA）
-    var sign_type: String
+    public var sign_type: String
      /// URL types 下的 URL Scheme
-    var appScheme: String
+    public var appScheme: String
 // ------------------ 以下字段可以为空 ---------------------
     /// 未付款交易的超时时间
-    var it_b_pay: String?
+    public var it_b_pay: String?
     /// appid
-    var app_id: String?
+    public var app_id: String?
     /// 客户端来源
-    var appenv: String?
+    public var appenv: String?
     /// 商品类型
-    var goods_type: String?
+    public var goods_type: String?
     /// 是否发起实名校验
-    var rn_check: String?
+    public var rn_check: String?
     /// 授权令牌
-    var extern_token: String?
+    public var extern_token: String?
     /// 商户业务扩展参数
-    var out_context: String?
+    public var out_context: String?
     
-    init (partner: String, seller_id: String, out_trade_no: String, subject: String, body: String, total_fee: String, notify_url: String, payment_type: String = "1", sign: String, appScheme: String) {
+    public init (partner: String, seller_id: String, out_trade_no: String, subject: String, body: String, total_fee: String, notify_url: String, payment_type: String = "1", sign: String, appScheme: String) {
         self.partner = partner
         self.seller_id = seller_id
         self.out_trade_no = out_trade_no
