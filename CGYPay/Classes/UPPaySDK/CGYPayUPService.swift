@@ -19,11 +19,7 @@ public class CGYPayUPService: BaseCGYPay {
     override public func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
         payCallBack = callBack
         if case .upPay(let order) = channel {
-            if let rootViewControl = UIApplication.sharedApplication().keyWindow?.rootViewController {
-                UPPaymentControl.defaultControl().startPay(order.tn, fromScheme: order.appScheme, mode: order.mode, viewController: rootViewControl)
-            } else {
-                payCallBack?(CGYPayStatusCode.PayErrUnKnown)
-            }
+            UPPaymentControl.defaultControl().startPay(order.tn, fromScheme: order.appScheme, mode: order.mode, viewController: order.viewController)
         }
     }
     

@@ -23,7 +23,7 @@ extension NSObject {
             //return cls
         //}
         
-        let appName = "Pods"
+        let appName = "CGYPay"
         let classStringName = "_TtC\(appName.characters.count)\(appName)\(className.characters.count)\(className)"
         let  cls: AnyClass? = NSClassFromString(classStringName)
         return cls
