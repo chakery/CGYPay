@@ -9,14 +9,14 @@
 
 import Foundation
 
-class CGYPayUPService: BaseCGYPay {
+public class CGYPayUPService: BaseCGYPay {
     private var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayUPService()
-    override class var sharedInstance: CGYPayUPService {
+    override public class var sharedInstance: CGYPayUPService {
         return _sharedInstance
     }
     
-    override func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
+    override public func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
         payCallBack = callBack
         if case .upPay(let order) = channel {
             if let rootViewControl = UIApplication.sharedApplication().keyWindow?.rootViewController {
@@ -27,7 +27,7 @@ class CGYPayUPService: BaseCGYPay {
         }
     }
     
-    override func handleOpenURL(url: NSURL) {
+    override public func handleOpenURL(url: NSURL) {
         guard "uppayresult" == url.host else { return }
         UPPaymentControl.defaultControl().handlePaymentResult(url) { [unowned self] stringCode, resultDic in
             switch stringCode {

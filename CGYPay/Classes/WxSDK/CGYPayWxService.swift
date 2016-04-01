@@ -9,18 +9,18 @@
 
 import Foundation
 
-class CGYPayWxService: BaseCGYPay, WXApiDelegate {
+public class CGYPayWxService: BaseCGYPay, WXApiDelegate {
     var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayWxService()
-    override class var sharedInstance: CGYPayWxService {
+    override public class var sharedInstance: CGYPayWxService {
         return _sharedInstance
     }
     
-    func onReq(req: BaseReq!) {
+    public func onReq(req: BaseReq!) {
         
     }
     
-    func onResp(resp: BaseResp!) {
+    public func onResp(resp: BaseResp!) {
         // 微信支付
         if resp is PayResp {
             payResponseParse(resp as! PayResp)
@@ -29,7 +29,7 @@ class CGYPayWxService: BaseCGYPay, WXApiDelegate {
     }
     
     // 发送微信支付
-    override func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
+    override public func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
         if case .weixin(let order)  = channel {
             guard WXApi.isWXAppInstalled() else {
                 callBack(.PayErrWxUnInstall)
@@ -52,7 +52,7 @@ class CGYPayWxService: BaseCGYPay, WXApiDelegate {
      
      - parameter url: url
      */
-    override func handleOpenURL(url: NSURL) {
+    override public func handleOpenURL(url: NSURL) {
         guard "pay" == url.host else { return }
         WXApi.handleOpenURL(url, delegate: self)
     }
@@ -62,7 +62,7 @@ class CGYPayWxService: BaseCGYPay, WXApiDelegate {
      
      - parameter appid: appid
      */
-    override func registerWxAPP(appid: String) {
+    override public func registerWxAPP(appid: String) {
         WXApi.registerApp(appid)
     }
     

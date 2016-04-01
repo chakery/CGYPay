@@ -9,15 +9,15 @@
 
 import Foundation
 
-class CGYPayAliService: BaseCGYPay {
+public class CGYPayAliService: BaseCGYPay {
     var payCallBack: CGYPayCompletedBlock?
     private static let _sharedInstance = CGYPayAliService()
-    override class var sharedInstance: CGYPayAliService {
+    override public class var sharedInstance: CGYPayAliService {
         return _sharedInstance
     }
     
     // 发送支付宝支付
-    override func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
+    override public func sendPay(channel: CGYPayChannel, callBack: CGYPayCompletedBlock) {
         payCallBack = callBack
         if case .aliPay(let order) = channel {
             AlipaySDK.defaultService().payOrder(order.toOrderString(), fromScheme: order.appScheme, callback: { [unowned self] resultDic in
@@ -34,7 +34,7 @@ class CGYPayAliService: BaseCGYPay {
      
      - parameter url: url
      */
-    override func handleOpenURL(url: NSURL) {
+    override public func handleOpenURL(url: NSURL) {
         guard url.host == "safepay" || url.host == "platformapi" else { return }
         AlipaySDK.defaultService().processOrderWithPaymentResult(url, standbyCallback: { [unowned self] resultDic in
             if let dic = resultDic as? [String:AnyObject] {
