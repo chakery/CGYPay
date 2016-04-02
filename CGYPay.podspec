@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   s.subspec 'AliPay' do |alipay|
     alipay.source_files = 'CGYPay/Classes/AlipaySDk', 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework/Headers/*'
     alipay.vendored_frameworks = 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework'
+    alipay.public_header_files = 'CGYPay/Classes/AlipaySDk/AlipaySDK.framework/Headers/**/*.h'
     alipay.frameworks = 'CoreMotion', 'CoreGraphics', 'CoreText', 'QuartzCore'
     alipay.dependency 'CGYPay/Core'
   end
@@ -28,6 +29,7 @@ Pod::Spec.new do |s|
   s.subspec 'WxPay' do |wx|
     wx.source_files = 'CGYPay/Classes/WxSDK'
     wx.vendored_libraries = 'CGYPay/Classes/WxSDK/*.a'
+    wx.public_header_files = 'CGYPay/Classes/WxSDK/*.h'
     wx.ios.library = 'sqlite3.0'
     wx.dependency 'CGYPay/Core'
   end
@@ -35,6 +37,7 @@ Pod::Spec.new do |s|
   s.subspec 'UnionPay' do |unionpay|
     unionpay.source_files = 'CGYPay/Classes/UPPaySDK'
     unionpay.vendored_libraries = 'CGYPay/Classes/UPPaySDK/*.a'
+    unionpay.public_header_files = 'CGYPay/Classes/UPPaySDK/*.h'
     unionpay.dependency 'CGYPay/Core'
   end
 

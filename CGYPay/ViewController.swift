@@ -67,7 +67,7 @@ class ViewController: UIViewController {
              姓名：张三
          */
         
-        let order = CGYPayUpOrder(tn: "201603311049141648338", appScheme: "com.ccggyy.cgypay", mode: "01")
+        let order = CGYPayUpOrder(tn: "201603311049141648338", appScheme: "com.ccggyy.cgypay", mode: "01", viewController: self)
         
         CGYPay.createPayment(.upPay(order: order)) { status in
             switch status {
