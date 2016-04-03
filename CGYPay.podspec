@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CGYPay"
-  s.version      = "1.2.1"
+  s.version      = "1.2.2"
   s.summary      = "CGYPay SDK"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.homepage     = "https://github.com/Chakery/CGYPay"
