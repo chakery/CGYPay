@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'WxPay' do |wx|
-    wx.source_files = 'CGYPay/Classes/WxSDK'
+    wx.source_files = 'CGYPay/Classes/WxSDK', 'CGYPay/Classes/WxSDK/*.h'
     wx.vendored_libraries = 'CGYPay/Classes/WxSDK/*.a'
     wx.public_header_files = 'CGYPay/Classes/WxSDK/*.h'
     wx.ios.library = 'sqlite3.0'
