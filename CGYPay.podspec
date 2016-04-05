@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     wx.vendored_libraries = 'CGYPay/Classes/WxSDK/**/*.a'
     wx.public_header_files = 'CGYPay/Classes/WxSDK/**/*.h'
     wx.ios.library = 'sqlite3.0'
-    wx.dependency 'WeixinSDK', '~> 1.4.3'
+    wx.dependency 'WXSDKCoreKit', '~> 1.6.2'
     wx.dependency 'CGYPay/Core'
   end
 
